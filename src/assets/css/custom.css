@@ -7,7 +7,7 @@
 }
 
 .btn{
-    border-radius: 8px
+    border-radius: 4px
 }
 
 .material-icons{
@@ -44,9 +44,8 @@
 .product-container > .product-image-box{
     overflow: hidden;
     position: relative;
-    border-radius: 14px;
+    border-radius: 8px;
 }
-
 
 .site-aspect-ratio-eq, .product-image-box{
     padding-top: 50%;
