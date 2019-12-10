@@ -1,0 +1,96 @@
+{% extends "layouts/default-theme.html" %}
+
+{% block content %}
+
+<div class="p-5 bg-light d-flex align-content-center  align-items-center justify-content-center" style="height: 400px;">
+    <div class="text-center">
+        <h1 class="font-weight-bold " style="">Store Title...</h1>
+        <p>Brief store caption goes here for little information to the users who visit. </br> Get started. </br>  Make
+            use of this
+            area to tell your visitors more about your business and what it offers</p>
+        <div>
+            <button class="btn btn-primary"> Shop</button>
+            <button class="btn">Subscribe</button>
+        </div>
+    </div>
+</div>
+
+<div class="container p-0 m-0 p-lg-3 bg-light mx-auto my-3">
+    <div class="m-3 m-lg-4 text-center">
+        <h3 class=" font-weight-bold">Our products</h3>
+        <p>Take your time to explore what we offer</p>
+    </div>
+    <div class="row m-lg-4 no-gutters justify-content-between">
+        {% for i in [1,2,3,4,5,6] %}
+        <div class="col col-6 col-md-4 col-lg-4">
+            <div class=" m-lg-0 product-container  p-2 p-md-3">
+                <div class="product-image-box">
+                    <div class="product-image" style="background-image: url('/resource/img/items/{{i}}.jpg')" ></div>
+                </div>
+                <div class="my-2">
+                    <div class="font-weight-bold text-secondary">Product title</div>
+                    <span class="font-weight-bold ">$200.0</span>
+                    <div class="p-1"></div>
+                    <div class="text-white">
+                        <button class="btn btn-sm btn-primary  px-lg-3 font-weight-bold font-w">Purchase</button>
+                        <button class="btn btn-sm border border-dark">
+                            <i class="material-icons text-dark">add</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="col-12  my-3 pr-3">
+            <button class="btn btn-secondary float-right">Explore our collection
+
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container p-0 m-0 p-lg-3 bg-light mx-auto my-3">
+    <div class=" p-0 m-0 p-lg-3 ">
+        <div class="text-center">
+            <h3 class="font-weight-bold">Store Collections</h3>
+        </div>
+        <div class="row no-gutters">
+            {% for i in [1,2,3,4,5,6] %}
+            <div class="col-12  col-md-6 col-lg-4 p-2 p-md-3">
+                <div class="d-flex align-items-start align-content-start border">
+                    <div class="w-25 position-relative m-2">
+                        <div class="site-aspect-ratio-eq position-relative">
+                            <div class="h-100 w-100 position-absolute bg-danger fix-abs-pos-element">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-75 m-2">
+                        <span class="font-weight-bold">Category title</span>
+                        <br/>
+                        <span>
+                            this is some description of this particular category
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="">
+    <div class="container  p-0 m-0 p-lg-3 bg-light mx-auto my-3 ">
+        <div class="row">
+            <!-- Mode insight in describing store  -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% macro productColumn(num) %}
+
+{% endmacro %}
